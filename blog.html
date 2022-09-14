@@ -5,8 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <!-- DaisyUi and tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.27.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <main>
+        <section>
+            <div class="card lg:card-side bg-base-100 shadow-xl">
+                <div class="card-body">
+                  <h2 class="card-title text-bold">1. What is the difference between local storage and session storage?</h2>
+                  <p>SessionStorage is similar to localStorage ; the difference is that while data in localStorage doesn't expire, 
+                    data in sessionStorage is cleared when the page session ends. 
+                    Whenever a document is loaded in a particular tab in the browser, a unique page session gets created and assigned to that particular tab.
+                    </p>
+                </div>
+              </div>
+            <div class="card lg:card-side bg-base-100 shadow-xl">
+                <div class="card-body">
+                  <h2 class="card-title text-bold">2. What is the difference between local and global scope in javascript?</h2>
+                  <p>JavaScript variables have only two scopes. Global Variables − A global variable has a global scope which means it can be defined anywhere in your JavaScript code.
+                    Local Variables − A local variable will be visible only within a function where it is defined. Function parameters are always local to that function.
+                   </p>
+                </div>
+              </div>
+            <div class="card lg:card-side bg-base-100 shadow-xl">
+                <div class="card-body">
+                  <h2 class="card-title">3.How does js event loop work?</h2>
+                  <p>The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event 
+                    from the queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.
+                    </p>
+                </div>
+              </div>
+            <div class="card lg:card-side bg-base-100 shadow-xl">
+                <div class="card-body">
+                  <h2 class="card-title">4.How many way to get undefined in js?</h2>
+                  <p>There is eight way to get undefined:
+                    i)Declare a variable without assign a value.<br>
+                    ii)Function with no return.<br>
+                    iii)Parameter with no arguments.<br>
+                    iv)If return has nothin on the right side will return undefined.<br>
+                    v)Property that doesn't exists on an object.<br>
+                    vi)Accessing array elements outside the index range.<br>
+                    vii)Deleting an element inside an array.<br>
+                    viii)Set a value directly to undefined.</p>
+                </div>
+              </div>
+        </section>
+    </main>
 </body>
 </html>
